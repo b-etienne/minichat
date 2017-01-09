@@ -4,7 +4,9 @@ import threading
 
 
 class ThreadReception(threading.Thread):
-
+	"""
+	Receiving thread
+	"""
 	def __init__(self, cl):
 		threading.Thread.__init__(self)
 		self.cl = cl
@@ -16,7 +18,9 @@ class ThreadReception(threading.Thread):
 
 
 class ThreadEmission(threading.Thread):
-
+	"""
+	Emitting thread
+	"""
 	def __init__(self, cl, user):
 		threading.Thread.__init__(self)
 		self.cl = cl
