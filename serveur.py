@@ -3,7 +3,9 @@ import threading
 
 
 class ThreadReception(threading.Thread):
-
+    """
+	Receiving thread
+	"""
 	def __init__(self, cl):
 		threading.Thread.__init__(self)
 		self.cl = cl
