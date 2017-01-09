@@ -32,7 +32,7 @@ class ThreadEmission(threading.Thread):
 if __name__ == '__main__':
 
 	s = socket.socket()
-	host = '163.113.191.25'#socket.gethostname()
+	host = ''#put server IP here
 	port = 12345
 	s.connect((host, port))
 
