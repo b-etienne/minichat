@@ -37,7 +37,6 @@ class ThreadEmission(threading.Thread):
 
 
 if __name__ == '__main__':
-
 	s = socket.socket()
 	host = ''#put server IP here
 	port = 12345
@@ -46,7 +45,7 @@ if __name__ == '__main__':
 	pseudo = input("Enter your pseudo : ")
 	ThE = ThreadEmission(s, pseudo)
 	ThR = ThreadReception(s)
-	ThE.start()
+	ThE.start()	
 	ThR.start()
 
 	
