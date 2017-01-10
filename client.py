@@ -6,6 +6,7 @@ import threading
 class ThreadReception(threading.Thread):
 	"""
 	Receiving thread
+	cl : client (a socket)
 	"""
 	def __init__(self, cl):
 		threading.Thread.__init__(self)
@@ -20,6 +21,8 @@ class ThreadReception(threading.Thread):
 class ThreadEmission(threading.Thread):
 	"""
 	Emitting thread
+	cl : client (a socket)
+	user : username
 	"""
 	def __init__(self, cl, user):
 		threading.Thread.__init__(self)
