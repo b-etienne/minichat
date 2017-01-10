@@ -5,7 +5,8 @@ import threading
 class ThreadReception(threading.Thread):
     """
 	Receiving thread
-	cl : client socket
+    Params:
+	    cl : client socket
 	"""
 	def __init__(self, cl):
 		threading.Thread.__init__(self)
